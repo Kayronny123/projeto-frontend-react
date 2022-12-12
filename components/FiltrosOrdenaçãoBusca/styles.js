@@ -1,27 +1,36 @@
 import styled from "styled-components";
-;
-
-
 export const Container = styled.header`
   display: flex;
-  gap: 16px;
+  gap: 10px;
   padding: 16px;
-  margin: 16px;
-  border: 1px border #fff;
+  border: 5px solid gray;
+  width: 600px;
+  height: 100px;
   background-color: yellowgreen;
+  flex-direction: row;
+  justify-content: flex-start;
+  border-radius: 20px;
+  margin-bottom: 52px;
 `;
 export const Search = styled.div`
   display: flex;
   padding: 1px;
+  gap: 12px;
+  justify-content: flex-start;
+  text-align: flex-start;
+  align-items: center;
   margin: 1px;
-  height: 29px;
-  width: 150px;
+  height: 50px;
+  width: 250px;
 `;
 export const Choose = styled.div`
   display: flex;
   padding: 1px;
+  justify-content: flex-start;
+  text-align: flex-start;
+  align-items: center;
   margin: 1px;
-  height: 29px;
-  width: 150px;
-
+  height: 50px;
+  width: 290px;
+  flex-direction: row;
 `;
