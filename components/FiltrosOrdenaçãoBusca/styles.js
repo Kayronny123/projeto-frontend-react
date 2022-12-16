@@ -4,8 +4,8 @@ export const Container = styled.header`
   gap: 10px;
   padding: 16px;
   border: 5px solid gray;
-  width: 700px;
-  height: 100px;
+  width: 90vw;
+  height: 10vh;
   background-color: yellowgreen;
   flex-direction: row;
   justify-content: flex-start;
