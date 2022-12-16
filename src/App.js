@@ -1,26 +1,35 @@
 import React from "react";
 import Header from "../components/FiltrosOrdenaçãoBusca/Header";
-import CardPodutos from "../components/CardProdutos/CardProdutos";
+import CardProdutos from "../components/CardProdutos/CardProdutos";
 import "./styles.css";
 import { createGlobalStyle } from "styled-components";
+import Main, { CardContainer } from "./styled";
+import TodosProdutos from "../components/Objetos";
 
 const GlobalStyle = createGlobalStyle`
   *{
-   width: 130px;
-   height: 30px;
-    padding: 5px;
+   width: 55%;
+   height: 5vh;
+    padding: 0px;
     margin: 0px;
-    box-sizing: border-box;
+
   
   }
 `;
-export default function App() {
+export default function App(props) {
   return (
     <>
       <GlobalStyle />
       <Header />
-      <CardPodutos />
-      <CardPodutos />
+      <Main>
+        <CardContainer>
+          {TodosProdutos.map((produto) => {
+            return (
+              <CardProdutos key={produto.id} produto={produto}></CardProdutos>
+            );
+          })}
+        </CardContainer>
+      </Main>
     </>
   );
 }

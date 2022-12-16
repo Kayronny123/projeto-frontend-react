@@ -4,7 +4,7 @@ export const Container = styled.header`
   gap: 10px;
   padding: 16px;
   border: 5px solid gray;
-  width: 600px;
+  width: 700px;
   height: 100px;
   background-color: yellowgreen;
   flex-direction: row;
@@ -21,7 +21,7 @@ export const Search = styled.div`
   align-items: center;
   margin: 1px;
   height: 50px;
-  width: 250px;
+  width: 430px;
 `;
 export const Choose = styled.div`
   display: flex;
@@ -31,6 +31,6 @@ export const Choose = styled.div`
   align-items: center;
   margin: 1px;
   height: 50px;
-  width: 290px;
+  width: 300px;
   flex-direction: row;
 `;

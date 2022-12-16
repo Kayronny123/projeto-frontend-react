@@ -1,45 +1,39 @@
 import styled from "styled-components";
 
-export const CardsProdutos = styled.body`
+export const Card = styled.body`
+  border-radius: 20px;
   display: flex;
-  padding: 1px;
-  margin: 1px;
-  height: 360px;
-  width: 500px;
-  font-size: 17px;
-  background-color: yellowgreen;
-  color: white;
   flex-direction: row;
-  text-align: center;
-  align-items: center;
-  border-radius: 40px;
+  flex-wrap: wrap;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  width: 28vw;
+  height: 500px;
+  margin-bottom: 25px;
+  box-shadow: 0px 5px 5px 5px rgba(102, 102, 102, 1);
+  padding: 10px;
+  background-color: #2e5894;
+  justify-content: center;
 `;
-export const InfoProdutos = styled.p`
-  display: flex;
-  padding: 9px;
-  margin: 9px;
-  height: 220px;
-  width: 600px;
-  font-size: 13px;
+export const InfoProdutos = styled.div`
+  /* height: 44%; */
+  font-size: 0.8rem;
   color: white;
+  display: flex;
   flex-direction: column;
-  text-align: flex-end;
-  position: bottom;
-  text-align: center;
-  align-self: flex-end;
-  align-items: flex-end;
-  border-radius: 30px;
-  text-decoration: underline;
+  align-items: center;
 `;
 export const CardImagem = styled.img`
+  width: 26vw;
+  height: 35vh;
+  border-radius: 12px;
+`;
+export const Bloco2 = styled.section`
+  height: 50%;
   display: flex;
-  padding: 1px;
-  margin: 1px;
-  width: 193px;
-  height: 193px;
-  position: relative;
-  top: 0px;
-  border-radius: 10px;
-  border: 2px solid black;
-  right: -3px;
+  flex-direction: column;
+  align-items: center;
+  p {
+    margin: -40px;
+  }
 `;
