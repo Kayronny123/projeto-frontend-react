@@ -10,10 +10,12 @@ const GlobalStyle = createGlobalStyle`
   *{
  font-family: "Josefin Sans";
  padding: 0;
- margin: 3px;
-max-width: 1170px;
-flex-direction: row;
-/* background-color:#2e6894; */
+ margin: 0;
+max-width: 100%;
+height:100%;
+justify-content:center;
+
+
   }
 `;
 export default function App(props) {
