@@ -1,6 +1,6 @@
-import Imagem1 from "./Imagens/arma-portais.jpg";
-import Imagem2 from "./Imagens/bateria-microverso.jpeg";
-import Imagem3 from "./Imagens/caixa-meeseks.jfif";
+import Imagem1 from "./Imagens/arma-port.png";
+import Imagem2 from "./Imagens/bateria-micro2.jpg";
+import Imagem3 from "./Imagens/caixa-meeseks1.jfif";
 import Imagem4 from "./Imagens/espaconave-rick.jpg";
 import Imagem5 from "./Imagens/robo-passa-manteiga.png";
 
@@ -8,39 +8,43 @@ import Imagem5 from "./Imagens/robo-passa-manteiga.png";
 const TodosProdutos = [
   {
     id: 1,
-    produto1: "Arma de Portais",
+    produto: " Arma de Portais",
     preco: 6000,
     imagem: Imagem1,
-    descricao1:
-      "A arma de portais, dispara portais em formate redemoinhos verdes. Permitindo que o usuário viaje até outra dimensão ao atravessa-lo"
+    descricao:
+      " A arma de portais, dispara portais em formate redemoinhos verdes. Permitindo que o usuário viaje até outra dimensão ao atravessa-lo."
   },
   {
     id: 2,
-    produto2: "Bateria de Microverso",
+    produto: " Bateria de Microverso",
     preco: 4000,
     imagem: Imagem2,
-    descricao2: ""
+    descricao:
+      " É Um mundo que gera energia a partir de dispositivos de movimento mecânico que é realizado pelos micro humanos que habitam nela."
   },
   {
     id: 3,
     produto: "Caixa de Meeseks",
     preco: 2000,
     imagem: Imagem3,
-    descricao3: ""
+    descricao:
+      " A Caixa Meeseek é um gadget que cria um Sr. Meeseeks com o propósito de completar um objetivo específico que você pedir, após cumprir seu objetivo ele desaparece."
   },
   {
     id: 4,
     produto: "Espaçonave",
     preco: 9000,
     imagem: Imagem4,
-    descricao4: ""
+    descricao:
+      " Uma nave  é movida por um elemento chamado ''matéria escura concentrada'', que é capaz de vencer a barreira espaço-tempo sempre que preciso."
   },
   {
     id: 5,
-    produto: "Robozinha passa manteiga",
+    produto: " Robozinho passa manteiga",
     preco: 1000,
     imagem: Imagem5,
-    descricao5: ""
+    descricao:
+      " Um robô que tem um único objetivo de alcançar a manteiga na mesa do café da manhã."
   }
 ];
 

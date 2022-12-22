@@ -8,12 +8,12 @@ import TodosProdutos from "../components/Objetos";
 
 const GlobalStyle = createGlobalStyle`
   *{
-   width: 55%;
-   height: 5vh;
-    padding: 0px;
-    margin: 0px;
-
-  
+ font-family: "Josefin Sans";
+ padding: 0;
+ margin: 3px;
+max-width: 1170px;
+flex-direction: row;
+/* background-color:#2e6894; */
   }
 `;
 export default function App(props) {
