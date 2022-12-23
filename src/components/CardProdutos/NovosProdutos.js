@@ -61,7 +61,7 @@ export default function CardProdutos(props) {
                 src={cartoes.imagem}
                 alt="card-imagem"
               />
-              <p className="price-product">{cartoes.preco}</p>
+              <button className="price-product">Preço: {cartoes.preco}</button>
             </div>
             <p className="description-product">{cartoes.descricao}</p>
           </p>
