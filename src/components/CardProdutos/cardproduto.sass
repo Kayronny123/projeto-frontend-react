@@ -1,0 +1,29 @@
+@use 'variables'
+@use 'mixins'
+*
+ font-family: "Josefin Sans"
+ padding: 0
+ margin: 0
+ box-sizing: border-box
+
+.card-nome
+  color: variables.$text-color
+  font-size: 1.2rem
+  margin-bottom: 1rem
+  padding-left: 1rem
+  text-align: center
+
+.card-imagem
+ display: flex
+ align-items: center
+ justify-content: center
+ background-size: 100%
+ background-position: centerbackground
+ background-repeat: no-repeat
+ filter: grayscale(100%)
+ transition: .8s
+ &:hover
+    background-size: 120%
+    filter: grayscale(0%)
+    &-card
+    flex-direction: column

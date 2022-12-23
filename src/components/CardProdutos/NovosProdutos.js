@@ -1,10 +1,10 @@
-import Imagem1 from "./Imagens/arma-port.png";
-import Imagem2 from "./Imagens/bateria-micro2.jpg";
-import Imagem3 from "./Imagens/caixa-meeseks1.jfif";
-import Imagem4 from "./Imagens/espaconave-rick.jpg";
-import Imagem5 from "./Imagens/robo-passa-manteiga.png";
+import Imagem1 from "../Imagens/arma-port.png";
+import Imagem2 from "../Imagens/bateria-micro2.jpg";
+import Imagem3 from "../Imagens/caixa-meeseks1.jfif";
+import Imagem4 from "../Imagens/espaconave-rick.jpg";
+import Imagem5 from "../Imagens/robo-passa-manteiga.png";
+import "../CardProdutos/cardproduto.sass";
 
-// Criando array de objetos para importa-los no app
 const TodosProdutos = [
   {
     id: 1,
@@ -48,4 +48,34 @@ const TodosProdutos = [
   }
 ];
 
-export default TodosProdutos;
+export default function CardProdutos(props) {
+  return (
+    <div>
+      {TodosProdutos.map((cartoes) => {
+        return (
+          <p className="card-nome">
+            {cartoes.produto}
+            <div className="card-imagem">
+              <img
+                className="card-imagem"
+                src={cartoes.imagem}
+                alt="card-imagem"
+              />
+              <p className="price-product">{cartoes.preco}</p>
+            </div>
+            <p className="description-product">{cartoes.descricao}</p>
+          </p>
+        );
+      })}
+    </div>
+
+    // <Card>
+
+    //   {/* {`${props.produto.produto} `}
+    //   {<CardImagem src={props.produto.imagem} alt={"imagem de produtos"} />}
+    //   {`Descrição:${props.produto.descricao} `}
+    //   <p>{`Preço:${props.produto.preco}`}</p> */}
+    //   <Btn>Adicionar ao carrinho</Btn>
+    // </Card>
+  );
+}
