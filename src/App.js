@@ -7,6 +7,7 @@
 // import Styles from "./styles-sass/cardproduto"
 import Header from "./components/FiltrosOrdenaçãoBusca/Header";
 import CardProdutos from "./components/CardProdutos/NovosProdutos";
+import { useState } from "react";
 
 // const GlobalStyle = createGlobalStyle`
 //   *{
@@ -20,19 +21,14 @@ import CardProdutos from "./components/CardProdutos/NovosProdutos";
 //   }
 // `;
 export default function App() {
+  const [nomeProduto, setNomeProduto] = useState("");
+
   return (
     <>
       <div>
-        <Header />
+        <Header nomeProduto={nomeProduto} setNomeProduto={setNomeProduto} />
         <CardProdutos />
       </div>
-      {/* <GlobalStyle />
-      <Header />
-      <Main>
-        <CardContainer>
-          <CardProdutos/>
-        </CardContainer>
-      </Main> */}
     </>
   );
 }
