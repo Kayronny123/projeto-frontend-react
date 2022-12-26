@@ -1,34 +1,25 @@
-// import React from "react";
-// import CardProdutos from "../components/CardProdutos/CardProdutos";
-// import "./styles.css";
-// import { createGlobalStyle } from "styled-components";
-// import Main, { CardContainer } from "./styled";
-// import TodosProdutos from "../components/Objetos";
-// import Styles from "./styles-sass/cardproduto"
+// importação de todos componentes, hooks e styles
 import Header from "./components/FiltrosOrdenaçãoBusca/Header";
-import CardProdutos from "./components/CardProdutos/NovosProdutos";
+import NovosProdutos from "./components/CardProdutos/NovosProdutos";
 import { useState } from "react";
+import "../src/components/CardProdutos/cardproduto.sass";
 
-// const GlobalStyle = createGlobalStyle`
-//   *{
-//  font-family: "Josefin Sans";
-//  padding: 0;
-//  margin: 0;
-// max-width: 100%;
-// height:100%;
-// justify-content:center;
-
-//   }
-// `;
+// função do componente pai
 export default function App() {
-  const [nomeProduto, setNomeProduto] = useState("");
-
+  // começando a manipular os estados para buscar produtos por id, nome e preço máximo
+  const [id, setId] = useState("");
+  const [produto, setProduto] = useState("");
   return (
-    <>
-      <div>
-        <Header nomeProduto={nomeProduto} setNomeProduto={setNomeProduto} />
-        <CardProdutos />
-      </div>
-    </>
+    <div>
+      {/* componente filho da barra de busca recebendo por props os estados */}
+      <Header produto={produto} setProduto={setProduto} id={id} setId={setId} />
+      {/* componente filho da redenrização dos produtos recebendo por props os estados */}
+      <NovosProdutos
+        produto={produto}
+        setProduto={setProduto}
+        id={id}
+        setId={setId}
+      />
+    </div>
   );
 }
