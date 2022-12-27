@@ -51,6 +51,10 @@ export default function NovosProdutos(props) {
         " Um robô que tem um único objetivo de alcançar a manteiga na mesa do café da manhã."
     }
   ];
+  // testando função de localstorage
+  const acessarProdutos = () => {
+    localStorage.setItem("produto", JSON.stringify(TodosProdutos));
+  };
 
   return (
     <div>
@@ -73,7 +77,7 @@ export default function NovosProdutos(props) {
                   src={cartoes.imagem}
                   alt="card-imagem"
                 />
-                <button className="price-product">
+                <button onClick={acessarProdutos} className="price-product">
                   Preço: {cartoes.preco}
                 </button>
               </div>
