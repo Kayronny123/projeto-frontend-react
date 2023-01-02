@@ -8,7 +8,7 @@ export default function Header(props) {
     props.setId(e.target.value);
   };
   const onChangeProduto = (e) => {
-    props.setProduto(e.target.value);
+    props.setNome(e.target.value);
   };
 
   return (

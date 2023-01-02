@@ -8,18 +8,13 @@ import "../src/components/CardProdutos/cardproduto.sass";
 export default function App() {
   // começando a manipular os estados para buscar produtos por id, nome e preço máximo
   const [id, setId] = useState("");
-  const [produto, setProduto] = useState("");
+  const [nome, setNome] = useState("");
   return (
     <div>
       {/* componente filho da barra de busca recebendo por props os estados */}
-      <Header produto={produto} setProduto={setProduto} id={id} setId={setId} />
+      <Header nome={nome} setNome={setNome} id={id} setId={setId} />
       {/* componente filho da redenrização dos produtos recebendo por props os estados */}
-      <NovosProdutos
-        produto={produto}
-        setProduto={setProduto}
-        id={id}
-        setId={setId}
-      />
+      <NovosProdutos nome={nome} setProduto={setNome} id={id} setId={setId} />
     </div>
   );
 }
